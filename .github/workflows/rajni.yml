@@ -20,4 +20,5 @@ jobs:
           script: |
             cd /home/ubuntu/6weeks_rajni_PHP
             git pull origin main
+            pm2 delete "Kids Project" 
             pm2 start "php -S 0.0.0.0:8001" --name "Kids Project"
